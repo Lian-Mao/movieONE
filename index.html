@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies One: Your one stop site for the latest films!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="nav container">
+            <a href="index.html" class="logo">
+                Movies <span>ONE</span>
+            </a>
+          
+            <a href="#" class="user">
+                <img src="img/user.jpg" alt="" class="user">
+            </a>
+
+            <div class="navbar">
+                <a href="index.html#home" class="nav-link nav-active">
+                    <i class='bx bx-home-circle'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#popular" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Popular</span>
+                </a>
+                <a href="#favourites" class="nav-link">
+                    <i class='bx bx-like'></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+                <a href="index.html#movies" class="nav-link">
+                    <i class='bx bxs-film'></i>
+                    <span class="nav-link-title">Movies</span>
+                </a>
+            
+
+            </div>
+        </div>
+    </header>
+    <section class="home container" id="home">
+      
+
+        <img id="img1" class="home-img slideshow-img active" src="" alt="Image 1">
+        <img id="img2" class="home-img slideshow-img" src="play-page/play-background.jpg" alt="Image 2">
+        <img id="img3" class="home-img slideshow-img" src="play-page/cast2.jpg" alt="Image 3">
+        <img id="img4" class="home-img slideshow-img" src="play-page/cast3.jpg" alt="Image 4">
+        <img id="img5" class="home-img slideshow-img" src="play-page/cast6.jpg" alt="Image 5">
+        
+        <div class="home-text">
+            <h1 class="home-title"></h1>
+            <a href="#" class="watch-btn">
+                <i class='bx bx-play-circle'></i>
+                <span class="link-more">More info</span>
+            </a>
+        </div>
+        
+    </section>
+
+    <section class="popular container" id="popular">
+        <div class="heading">
+            <h2 class="heading-title">Popular Movies</h2>
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <div class="popular-content swiper" >
+            <div class="swiper-wrapper">
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="movies container" id="favourites">
+        <div class="heading">
+        <h2 class="heading-title">Favourites</h2>
+       
+        </div>
+        <div class="favourites-content">
+            <h2 id="boliao" class="boliao">No Favourites</h2>
+        </div>
+    </section>
+
+    <section class="movies container" id="movies">
+        <div class="heading">
+        <h2 class="heading-title">Movies and Shows</h2>
+        </div>
+        <div class="movies-content">
+       
+        </div>
+    </section>
+
+ 
+
+    <div class="copyright">
+        <p>&#169; All rights reserved </p>
+    </div>
+
+      
+</body>
+<script src="swiper-bundle.min.js"></script>
+<script type="module" src="homeScript.js"></script>
+<script>
+
+var swiper = new Swiper(".popular-content", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    //centeredSlides: true,
+    autoplay: {
+        delay: 55500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        280: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+
+        510: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+
+        758: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
+    }
+
+
+})
+</script>
+
+
+</html>
