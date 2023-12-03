@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies One: Your one stop site for the latest films!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <script src="swiper-bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">
+                Movies <span>ONE</span>
+            </a>
+        
+            <a href="#" class="user">
+                <img src="img/user.jpg" alt="" class="user">
+            </a>
+
+            <div class="navbar">
+                <a href="index.html" class="nav-link nav-active">
+                    <i class='bx bx-home-circle'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="index.html#popular" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Popular</span>
+                </a>
+                <a href="index.html#favourites" class="nav-link">
+                    <i class='bx bx-like'></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+                <a href="index.html#movies" class="nav-link">
+                    <i class='bx bxs-film'></i>
+                    <span class="nav-link-title">Movies</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <div class="play-container container">
+        <img src="img/funny-404-page.jpg" alt="" class="play-img">
+        <div class="play-text">
+          
+            <h2>
+                <span class="moviebackground" id="movietitle">
+                    
+                  </span>
+
+            </h2>
+            <div class="rating">
+            </div>
+            <div class="tags">
+                
+            </div>
+           <a  class="fav-btn">
+            <i id="fav-button" class="bx bx-heart"></i>
+            <span class="fav-text">Favourite</span>
+           </a>
+
+        </div>
+        <i class="bx bx-right-arrow play-movie"></i>
+        <div class="video-container ">
+            <div class="video-box">
+                <iframe id="myvideo" src="https://www.youtube.com/embed/OyDyOweu-PA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <i class='bx bx-x-circle close-video' ></i>
+              
+            </div>
+        </div>
+
+    </div>
+    <div class="about-movie container">
+        <h2 id="aboutmovietitle"></h2>
+        <p id="aboutmoviedesc">Not found</p>
+        <h2 class="cast-heading">Movie cast</h2>
+        <div class="cast">
+          
+        </div>
+    </div>
+    <div class="download">
+        <h2 class="download-title">Download Movie</h2>
+        <div class="download-links" id="download">
+            <a href="#" >480p</a>
+            <a href="#" >720p</a>
+            <a href="#" >1080p</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&#169; All rights reserved </p>
+    </div>
+
+   
+</body>
+<script src="swiper-bundle.min.js"></script>
+<script type="module" src="palypageScript.js"></script>
+
+
+</html>
